@@ -44,6 +44,8 @@
                 }
             } else {
                 console.log("hapy birday")
+                let fanfare = new Audio("fanfare.mp3");
+                fanfare.play();
                 clearInterval(interval);
                 document.body.style.backgroundImage = "url('confetti.gif')";
                 let header = document.getElementById("header");
@@ -70,7 +72,7 @@
             }
         }
 
-        let interval = setInterval(bday, 1000);
+        let interval = setInterval(bday, 700);
     </script>
 <body>
     

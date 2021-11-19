@@ -36,3 +36,10 @@ p {
 img {
     display: none;
 }
+
+@media screen and (max-width: 600px) {
+  h1 {
+      width: auto;
+      text-align: center;
+  }
+}
