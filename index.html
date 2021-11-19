@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="omg he fourten yer old!!!111!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hapy birday!!1!1!!</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+    <h1>HAPY BIRT DAY JOSCH DOO POO IS!!111!</h1>
+    <h1 id="count">1</h1>
+    <p>YAAA HE FORTIEN POGERSAJEOAWUE!1!!11</p>
+
+    <script>
+        let bday = function() {
+            let countEl = document.getElementById("count");
+            let count = parseFloat(countEl.innerHTML);
+
+            let body = document.getElementsByTagName("BODY")[0];
+
+            if (count < 14) {
+                countEl.innerHTML = count + 1;
+                
+                if (count % 2 == 0) {
+                    // if even
+                    body.style.backgroundColor = "#dddddd";
+                    body.style.color = "#212121";
+                } else {
+                    // if odd
+                    body.style.backgroundColor = "#212121";
+                    body.style.color = "#dddddd";
+                }
+            } else {
+                console.log("hapy birday")
+                clearInterval(interval);
+            }
+        }
+
+        let interval = setInterval(bday, 1000);
+    </script>
+<body>
+    
+</body>
+
+</html>
