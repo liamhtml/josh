@@ -8,9 +8,12 @@
     <title>hapy birday!!1!1!!</title>
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-    <h1>HAPY BIRT DAY JOSCH DOO POO IS!!111!</h1>
+    <h1 id="header">HAPY BIRT DAY JOSCH DOO POO IS!!111!</h1>
     <h1 id="count">1</h1>
     <p>YAAA HE FORTIEN POGERSAJEOAWUE!1!!11</p>
+    <p id="suspense">wow much suspense</p>
+    <img src="defaul danc.gif" alt="happ birdy jos h" width="40%">
+    <img src="take L.gif" alt="take L" width="30%">
 
     <script>
         let bday = function() {
@@ -31,9 +34,39 @@
                     body.style.backgroundColor = "#212121";
                     body.style.color = "#dddddd";
                 }
+
+                let suspense = document.getElementById("suspense");
+                if (count == 5 || count == 6) {
+                    suspense.style.display = "block";
+                }
+                if (count == 7) {
+                    suspense.style.display = "none";
+                }
             } else {
                 console.log("hapy birday")
                 clearInterval(interval);
+                document.body.style.backgroundImage = "url('confetti.gif')";
+                let header = document.getElementById("header");
+                let para = document.getElementsByTagName("P")[0];
+                let img = document.getElementsByTagName("IMG");
+                header.style.display = "block";
+                para.style.display = "block";
+                img[0].style.display = "block";
+                img[0].style.position = "absolute";
+                img[0].style.left = "0";
+                img[0].style.bottom = "7px";
+                img[1].style.display = "block";
+                img[1].style.position = "absolute";
+                img[1].style.right = "20px";
+                img[1].style.bottom = "0";
+                let color = function() {
+                    let r = Math.floor((Math.random() * 250));
+                    let g = Math.floor((Math.random() * 250));
+                    let b = Math.floor((Math.random() * 250));
+                    let rgb = `rgb(${r}, ${g}, ${b})`
+                    document.body.style.color = rgb;
+                }
+                setInterval(color, 10);
             }
         }
 

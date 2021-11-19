@@ -8,8 +8,8 @@
 }
 
 body {
-    background-color: #212121;
-    color: #dddddd;
+    background-color: #dddddd;
+    color: #212121;
 }
 
 h1 {
@@ -27,4 +27,12 @@ p {
     margin-top: 50px;
     margin-bottom: 50px;
     display: block;
+}
+
+#suspense {
+    display: none;
+}
+
+img {
+    display: none;
 }
